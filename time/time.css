@@ -1,18 +1,26 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 body {
-	font-family: sans-serif;
-	background-color: hsl(144deg, 100%, 90%);
-	height: 100dvh; /* more info about dvh here: https://web.dev/blog/viewport-units */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.container {
-	line-height: 1em;
-	text-align: center;
-}
+	margin: 0;
+	background-color: rgb(255, 255, 255);
+  }
+  
+  .container {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+  }
+  
+  .group {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .dot {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+  }

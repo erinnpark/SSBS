@@ -1,36 +1,21 @@
 let container = document.querySelector('.container');
+
 setTimeout(() => {
-	container.innerText = "hello";
-	container.style.fontSize = "100px";
-}, 500)
+  container.innerHTML = "<div class='group'><div class='dot' style='left: 220px; top: 220px; background-color: pink;'></div></div>";
+}, 500);
+
 setTimeout(() => {
-	container.innerText = "as you know,";
-	container.style.fontSize = "50px";
-}, 1500)
+  container.innerHTML = "<div class='group'><div class='dot' style='left: 220px; top: 220px; background-color: pink;'></div><div class='dot' style='left: 160px; top: 220px; background-color: lightblue;'></div></div>";
+}, 1000);
+
 setTimeout(() => {
-	container.innerText = "im a website";
-	container.style.fontSize = "200px";
-}, 2300)
+  container.innerHTML = "<div class='group'><div class='dot' style='left: 220px; top: 220px; background-color: pink;'></div><div class='dot' style='left: 160px; top: 220px; background-color: lightblue;'></div><div class='dot' style='left: 280px; top: 220px; background-color: lavender;'></div></div>";
+}, 1500);
+
 setTimeout(() => {
-	container.innerText = "";
-}, 3000)
+  container.innerHTML = "<div class='group'><div class='dot' style='left: 220px; top: 220px; background-color: pink;'></div><div class='dot' style='left: 160px; top: 220px; background-color: lightblue;'></div><div class='dot' style='left: 280px; top: 220px; background-color: lavender;'></div><div class='dot' style='left: 220px; top: 160px; background-color: lightgreen;'></div></div>";
+}, 2000);
+
 setTimeout(() => {
-	container.innerText = "so what?";
-	container.style.fontSize = "50px";
-}, 5000)
-setTimeout(() => {
-	container.innerText = "";
-}, 6000)
-setTimeout(() => {
-	container.innerText = "u wanna fight about it?";
-	container.style.fontSize = "300px";
-}, 9000)
-setTimeout(() => {
-	container.innerText = "";
-	let size = 10;
-	setInterval(() => {
-		container.innerText += " go away ";
-		container.style.fontSize = size + "px";
-		size += 1;
-	}, 100)
-}, 12000)
+  container.innerHTML = "<div class='group'><div class='dot' style='left: 220px; top: 220px; background-color: pink;'></div><div class='dot' style='left: 160px; top: 220px; background-color: lightblue;'></div><div class='dot' style='left: 280px; top: 220px; background-color: lavender;'></div><div class='dot' style='left: 220px; top: 160px; background-color: lightgreen;'></div><div class='dot' style='left: 220px; top: 280px; background-color: peachpuff;'></div></div>";
+}, 2500);

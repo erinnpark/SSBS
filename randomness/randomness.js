@@ -1,18 +1,34 @@
-let container = document.querySelector('.container');
-container.style.transform = `rotate(${Math.random()*90-45}deg) scale(${Math.random()*3+1})`;
+let container = document.querySelector(".container");
 
-let randomWords = [
-	"HELLO!",
-	"HI!",
-	"OH HI!",
-	"I’M A WEBSITE!",
-	"WOW",
-	"OMG"
-]
-let randomWord = randomWords[Math.floor(Math.random()*randomWords.length)];
+let numberOfDots = 80;
 
-container.innerHTML = randomWord;
-if (Math.random() < .5) {
-	let randomWord = randomWords[Math.floor(Math.random()*randomWords.length)];
-	container.innerHTML += " " + randomWord;
+let colors = [
+  "#49110b",
+  "#56483b",
+  "#191a1e",
+  "#ad9e89",
+  "#c8c2b7",
+  "#e7e5db",
+  "#49110b",
+  "#56483b",
+  "#e7e5db",
+  "#c8c2b7"
+];
+
+for (let i = 0; i < numberOfDots; i++) {
+  let dot = document.createElement("div");
+  dot.classList.add("dot");
+
+  let size = Math.random() * 50 + 10;
+  let x = Math.random() * window.innerWidth;
+  let y = Math.random() * window.innerHeight;
+  let color = colors[Math.floor(Math.random() * colors.length)];
+
+  dot.style.width = size + "px";
+  dot.style.height = size + "px";
+  dot.style.left = x + "px";
+  dot.style.top = y + "px";
+  dot.style.backgroundColor = color;
+
+  container.appendChild(dot);
 }
