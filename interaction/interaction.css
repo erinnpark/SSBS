@@ -1,14 +1,20 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 body {
-	font-family: sans-serif;
-	background-color: hsl(216deg, 100%, 90%);
-	height: 100dvh; /* more info about dvh here: https://web.dev/blog/viewport-units */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	margin: 0;
+	background-color: rgb(249, 249, 246);
+	overflow: hidden;
+}
+
+.container {
+	width: 270px;
+	height: 60px;
+	position: absolute;
+	left: 40vw;
+	top: 45vh;
+}
+
+.dot {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
 }
