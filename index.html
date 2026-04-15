@@ -4,56 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Topics</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: helvetica;
-    }
-
-    body {
-      background-color: rgb(255, 255, 255);
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    a {
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-    }
-
-    .topics {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-    .link {
-      position: absolute;
-    }
-
-    .item {
-      background-color: #ffffff;
-      border: 2px solid #000000;
-      border-radius: 25px;
-      padding: 14px 24px;
-      box-shadow: 4px 4px 0px #000000;
-      transition: transform 0.4s ease, filter 0.4s ease, color 0.4s ease;
-      display: inline-block;
-    }
-
-    .item:hover {
-      color: #000000;
-      transform: scale(1.12) rotate(-90deg);
-      filter: hue-rotate(120deg);
-    }
-  </style>
+  <link rel="stylesheet" href="homepage.css">
 </head>
-
 <body>
   <div class="topics">
     <a href="randomness/index.html" class="link"><div class="item">RANDOMNESS</div></a>
@@ -61,17 +13,6 @@
     <a href="interaction/index.html" class="link"><div class="item">INTERACTION</div></a>
     <a href="loop/index.html" class="link"><div class="item">LOOP</div></a>
   </div>
-
-  <script>
-    const links = document.querySelectorAll(".link");
-
-    links.forEach(link => {
-      const x = Math.random() * 80; 
-      const y = Math.random() * 80; 
-
-      link.style.left = x + "vw";
-      link.style.top = y + "vh";
-    });
-  </script>
+  <script src="homepage.js"></script>
 </body>
 </html>
